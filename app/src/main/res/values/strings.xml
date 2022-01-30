@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="text_button_true">True</string>
+    <string name="text_button_false">False</string>
+    <string name="text_button_cheat">cheat!</string>
+    <string name="text_button_prev">Prev</string>
+    <string name="text_button_next">Next</string>
+    <string name="text_warning">Are you sure you want to do this?</string>
+    <string name="text_button_show_answer">Show Answer</string>
+</resources>
