@@ -3,6 +3,19 @@ package ir.omidrezabagherian.quizapp.data
 object Data {
     var round = 0
 
+    val question = arrayOf(
+        arrayOf("Quiz1", "true"),
+        arrayOf("Quiz2", "false"),
+        arrayOf("Quiz3", "true"),
+        arrayOf("Quiz4", "false"),
+        arrayOf("Quiz5", "true"),
+        arrayOf("Quiz6", "false"),
+        arrayOf("Quiz7", "true"),
+        arrayOf("Quiz8", "false"),
+        arrayOf("Quiz9", "true"),
+        arrayOf("Quiz10", "false")
+    )
+
     val questions = arrayOf(
         "Quiz1",
         "Quiz2",
@@ -30,8 +43,8 @@ object Data {
     )
 
     val isCompletes = arrayOf(
-        StatusAnswer.None,
-        StatusAnswer.None,
+        StatusAnswer.Incorrect,
+        StatusAnswer.Correct,
         StatusAnswer.None,
         StatusAnswer.None,
         StatusAnswer.None,
