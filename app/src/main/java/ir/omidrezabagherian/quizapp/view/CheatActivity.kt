@@ -19,11 +19,11 @@ class CheatActivity : AppCompatActivity() {
         bindingCheat = ActivityCheatBinding.inflate(layoutInflater)
 
         bindingCheat.buttonShowAnswer.setOnClickListener {
-            if (Data.isCompletes[Data.round] == StatusAnswer.None) {
-                if (Data.answers[Data.round]) {
-                    Toast.makeText(this, R.string.text_toast_correct, Toast.LENGTH_SHORT).show()
+            if (Data.isCompletes[Data.round] == StatusAnswer.None || Data.isCompletes[Data.round] == StatusAnswer.Cheat) {
+                bindingCheat.textviewShowAnswer.text = if (Data.answers[Data.round]) {
+                    getString(R.string.text_toast_correct)
                 } else {
-                    Toast.makeText(this, R.string.text_toast_incorrect, Toast.LENGTH_SHORT).show()
+                    getString(R.string.text_toast_incorrect)
                 }
                 Data.isCompletes[Data.round] = StatusAnswer.Cheat
             } else {
